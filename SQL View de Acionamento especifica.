@@ -2,8 +2,8 @@
 
 SELECT * FROM vw_acionamento --Solicitando que o SELECT pegue informações da View de Acionamento de X Carteira;
 
-WHERE cod_Carteira = '10'  --Onde código da carteira(base que quero puxar os dados) está;
+WHERE cod_Carteira = ''  --Onde código da carteira(base que quero puxar os dados) está;
 
-  AND data_Registro between '2022-09-12' and '2022-09-17'  --Solicitando data especifica entre ####/##/## e ####/##/##;
+  AND data_Registro between 'ANO-MES-DIA' and 'ANO-MES-DIA'  --Solicitando data especifica entre ####/##/## e ####/##/##;
   
     and Login_Operador is not null --Solicitando que os logisn dos funcionários não sejam NULOS(Vazios).
